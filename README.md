@@ -1,27 +1,34 @@
 # TANSS API Integration for n8n
 
-This repository contains custom n8n nodes for interacting with the TANSS API. The nodes provide functionalities to manage tickets, authentication, and ticket lists within the TANSS system.
+This repository contains custom n8n nodes for interacting with the **TANSS API**. The nodes provide functionalities to manage tickets, authentication, and ticket lists within the TANSS system.
 
-## Features
+---
 
-- **Authentication**: Log in to the TANSS API using credentials.
-- **Ticket Management**:
-  - Fetch a ticket by ID.
-  - Create comments for tickets.
-  - Get ticket history.
-  - Update ticket details.
-  - Delete tickets with optional migration of entities.
-	- Merge Tickets Merge a Ticket into a Target Ticket.
-- **Ticket Lists**:
-  - Fetch tickets assigned to the current employee.
-  - Fetch general tickets not assigned to any employee.
-  - Fetch tickets for a specific company.
-  - Fetch tickets not associated with any company.
-  - Fetch project-related tickets.
-  - Fetch tickets assigned to other technicians.
+## ✨ Features
 
-## Installation
+### **Authentication**
+- Log in securely to the TANSS API using credentials.
 
-1. Clone this repository:
+### **Ticket Management**
+- Fetch ticket details by ID.
+- Create comments on tickets.
+- Retrieve ticket history.
+- Update ticket details effortlessly.
+- Delete tickets with optional entity migration.
+- Merge tickets into a target ticket.
+
+### **Ticket Lists**
+- Retrieve tickets assigned to the current employee.
+- Fetch general tickets not assigned to any employee.
+- View tickets for a specific company.
+- Fetch tickets unrelated to any company.
+- Access project-related tickets.
+- List tickets assigned to other technicians.
+
+---
+
+## 🚀 Installation
+
+1. Clone this repository to your local environment:
    ```bash
    git clone https://github.com/BuddiesD/n8n-nodes-tanss-new.git
