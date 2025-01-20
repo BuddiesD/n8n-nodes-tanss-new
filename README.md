@@ -11,7 +11,7 @@ This repository contains custom n8n nodes for interacting with the TANSS API. Th
   - Get ticket history.
   - Update ticket details.
   - Delete tickets with optional migration of entities.
-	- Merge Tickets (Merge a Ticket into a Target Ticket)
+	- Merge Tickets (Merge a Ticket into a Target Ticket).
 - **Ticket Lists**:
   - Fetch tickets assigned to the current employee.
   - Fetch general tickets not assigned to any employee.
