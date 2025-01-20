@@ -52,6 +52,12 @@ export class TanssTickets implements INodeType {
 						action: 'Fetches the history of a ticket',
 					},
 					{
+						name: 'Merge Tickets',
+						value: 'mergeTickets',
+						description: 'Merges one ticket into another',
+						action: 'Merges one ticket into another',
+					},
+					{
 						name: 'Update Ticket',
 						value: 'updateTicket',
 						description: 'Updates a ticket with the provided details',
@@ -77,7 +83,14 @@ export class TanssTickets implements INodeType {
 				type: 'number',
 				displayOptions: {
 					show: {
-						operation: ['getTicketById', 'createComment', 'getTicketHistory', 'updateTicket', 'deleteTicket'],
+						operation: [
+							'getTicketById',
+							'createComment',
+							'getTicketHistory',
+							'updateTicket',
+							'deleteTicket',
+							'mergeTickets',
+						],
 					},
 				},
 				default: 0,
@@ -89,11 +102,11 @@ export class TanssTickets implements INodeType {
 				type: 'number',
 				displayOptions: {
 					show: {
-						operation: ['deleteTicket'],
+						operation: ['deleteTicket', 'mergeTickets'],
 					},
 				},
 				default: 0,
-				description: 'Optional ID of the target ticket for migrating entities',
+				description: 'ID of the target ticket for migrating or merging entities',
 			},
 			{
 				displayName: 'Comment Title',
@@ -259,6 +272,12 @@ export class TanssTickets implements INodeType {
 					if (targetTicketId) {
 						url += `?targetTicketId=${targetTicketId}`;
 					}
+					break;
+
+				case 'mergeTickets':
+					const mergeTargetId = this.getNodeParameter('targetTicketId', i, 0) as number;
+					url = `${credentials.baseURL}/backend/api/v1/tickets/${ticketId}/merge/${mergeTargetId}`;
+					requestOptions.method = 'PUT';
 					break;
 
 				default:
