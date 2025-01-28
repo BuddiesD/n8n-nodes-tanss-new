@@ -2,6 +2,10 @@
 
 This repository contains custom n8n nodes for interacting with the **TANSS API**. The nodes provide functionalities to manage tickets, authentication, and ticket lists within the TANSS system.
 
+- **Deutsch:** Falls Fehler oder Probleme auftreten, melden Sie diese bitte an mich, ich werde diese gerne beheben.
+- **English:** If you encounter any errors or issues, please report them to me.
+
+
 ---
 
 ## ✨ Features
@@ -25,6 +29,11 @@ This repository contains custom n8n nodes for interacting with the **TANSS API**
 - Access project-related tickets.
 - List tickets assigned to other technicians.
 
+### **PC Management**
+- Fetch PC or server details by ID.
+- Create a new PC or server
+- Update PC or server details
+- Delete PCs or servers
 ---
 
 ## 🚀 Installation

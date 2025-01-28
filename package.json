@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-tanss-api",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "Nodes für das Tanss Ticketsystem",
   "keywords": [
     "n8n-community-node-package",
@@ -45,7 +45,8 @@
     "nodes": [
       "dist/nodes/authentication/TanssAuthentication.node.js",
       "dist/nodes/ticketLists/TanssTicketLists.node.js",
-      "dist/nodes/tickets/TanssTickets.node.js"
+      "dist/nodes/tickets/TanssTickets.node.js",
+      "dist/nodes/pcs/TanssPCs.node.js"
     ]
   },
   "devDependencies": {
