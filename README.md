@@ -5,6 +5,7 @@ This repository contains custom n8n nodes for interacting with the **TANSS API**
 - **Deutsch:** Falls Fehler oder Probleme auftreten, melden Sie diese bitte an mich, ich werde diese gerne beheben.
 - **English:** If you encounter any errors or issues, please report them to me.
 
+Über Feature Requests würde ich mich freuen.
 
 ---
 
@@ -20,6 +21,7 @@ This repository contains custom n8n nodes for interacting with the **TANSS API**
 - Update ticket details effortlessly.
 - Delete tickets with optional entity migration.
 - Merge tickets into a target ticket.
+- Creates a Ticket with the given information.
 
 ### **Ticket Lists**
 - Retrieve tickets assigned to the current employee.

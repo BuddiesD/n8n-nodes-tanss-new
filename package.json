@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-tanss-api",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Nodes für das Tanss Ticketsystem",
   "keywords": [
     "n8n-community-node-package",
